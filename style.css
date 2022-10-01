@@ -1,0 +1,174 @@
+*,
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica;
+  scroll-behavior: smooth;
+}
+
+header {
+  background: #1a2238;
+  color: #aeaeae;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo {
+  margin-right: auto;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: all 0.5s ease 0s;
+}
+
+.logo-title {
+  width: 35px;
+  height: 35px;
+}
+
+.logo-img {
+  width: 35px;
+  height: 35px;
+}
+
+.logo:hover {
+  color: aqua;
+  transform: rotate(2deg);
+}
+
+.btn-cta {
+  margin-right: 10px;
+  border: none;
+  font-size: 20px;
+  padding: 6px 12px;
+  background: #ff6a3d;
+  color: aliceblue;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-cta:hover {
+  color: aqua;
+  transform: rotate(2deg);
+}
+
+nav ul {
+  display: flex;
+  padding: 20px;
+}
+
+li {
+  list-style-type: none;
+  padding: 10px;
+  cursor: pointer;
+}
+
+li:hover {
+  color: aqua;
+  transform: rotate(2deg);
+}
+
+a {
+  color: #aeaeae;
+  text-decoration: none;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.title {
+  font-size: 24px;
+  font-weight: bold;
+}
+.discription {
+  font-size: 28px;
+  font-weight: bolder;
+}
+.img-foto {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  padding: 30px;
+}
+.parallax {
+  background-image: url("assets/foto/xx.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-clip: clip;
+  height: 75vh;
+}
+.tentang {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #fbfdfb;
+  padding: 40px;
+  gap: 8px;
+}
+
+.mt-10 {
+  margin-top: 20px;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  gap: 8px;
+}
+
+.card-item {
+  text-align: center;
+  width: 25%;
+  background: #f7f7f7;
+  color: #222;
+  padding: 24px;
+  gap: 8px;
+  box-shadow: 2px 5px 5px 1px rgba(0, 0, 0, 5);
+}
+
+.img {
+  width: 75px;
+  height: 75px;
+}
+@media screen and (max-width: 500px) {
+  .card {
+    flex-direction: column;
+  }
+  .card-item {
+    width: 100%;
+  }
+  .container {
+    width: 100%;
+    padding: 0;
+  }
+  .intro {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .img-foto {
+    padding: 0;
+  }
+}
+footer {
+  font-size: 13px;
+  padding: 20px;
+  text-align: center;
+  background: rgb(2, 5, 16);
+  color: #aeaeae;
+}
